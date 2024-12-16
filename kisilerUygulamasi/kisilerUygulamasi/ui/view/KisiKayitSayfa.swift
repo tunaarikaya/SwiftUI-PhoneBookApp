@@ -11,6 +11,8 @@ struct KisiKayitSayfa: View {
     @State private var tfKisiAd = ""
     @State private var tfKisiTel = ""
     
+    var viewModel = KisiKayitViewModel()
+    
     
     func kaydet(kisi_ad:String,kisi_tel:String){
         print("Kişi Kaydet : \(kisi_ad) - \(kisi_tel)")
@@ -22,7 +24,7 @@ struct KisiKayitSayfa: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             
             Button("Kaydet"){
-                kaydet(kisi_ad: tfKisiAd, kisi_tel: tfKisiTel)
+                viewModel.kaydet(kisi_ad: tfKisiAd, kisi_tel: tfKisiTel)
             }
         }
     }

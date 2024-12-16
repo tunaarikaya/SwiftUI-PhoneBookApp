@@ -12,6 +12,7 @@ struct KisiDetaySayfa: View {
     @State private var tfKisiTel = ""
     
     var kisi = Kisiler()
+    var viewModel = KisiDetayViewModel()
     
     
     func guncelle(kisi_id:Int,kisi_ad:String,kisi_tel:String){
@@ -24,7 +25,7 @@ struct KisiDetaySayfa: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
                 
                 Button("Guncelle"){
-                    guncelle(kisi_id: kisi.kisi_id!, kisi_ad: tfKisiAd, kisi_tel: tfKisiTel)
+                    viewModel.guncelle(kisi_id: kisi.kisi_id!, kisi_ad: tfKisiAd, kisi_tel: tfKisiTel)
                 }
             }.navigationTitle("Kisi Detay")
                 .onAppear{
