@@ -3,7 +3,7 @@
 //  kisilerUygulamasi
 //
 //  Created by Mehmet Tuna Arıkaya on 13.12.2024.
-//soslks
+//soslk
 
 import SwiftUI
 
