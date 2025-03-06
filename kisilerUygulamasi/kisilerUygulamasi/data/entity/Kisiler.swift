@@ -2,7 +2,7 @@
 //  Kisiler.swift
 //  kisilerUygulamasi
 //
-//  Created by Mehmet Tuna Arıkaya on 13.12.2024.
+//  Created by Mehmet Tuna dArıkaya on 13.12.2024.
 //sd
 
 import Foundation
